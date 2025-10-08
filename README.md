@@ -65,39 +65,28 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 ## 🚀 Getting Started
 
 ### 1. Start Infrastructure
-docker compose up -d
+`docker compose up -d`
 
 ### 2. Generate Logs
-Run generator.ipynb → creates log.csv
+Run `generator.ipynb` → creates `log.csv`
 
 ### 3. Send Logs to Kafka
-Run kafka_producer.ipynb
+Run `kafka_producer.ipynb`
 
 ### 4. Process with Spark Streaming
-Run spark_processing.ipynb → applies ML model & writes to InfluxDB
+Run `spark_processing.ipynb` → applies ML model & writes to InfluxDB
 
 ### 5. Visualize in Grafana
-Open http://localhost:3000
+- Open http://localhost:3000
+- Login: `admin / admin`
+- Connect to InfluxDB: (URL: `http://influxdb:8086`, Organization: `myorg`, Bucket: `mybucket`)
+- Create dashboards for:
+    - Threat detection
+    - Traffic volume
+    - Geographic analysis
+    - Protocol usage
 
-Login: admin / admin
-
-Connect to InfluxDB:
-
-URL: http://influxdb:8086
-
-Organization: myorg
-
-Bucket: mybucket
-
-Create dashboards for:
-
-Threat detection
-
-Traffic volume
-
-Geographic analysis
-
-Protocol usage
+---
 
 ## 📊 Results
 
@@ -111,6 +100,8 @@ Protocol usage
 - Geographic threat map
 - Protocol monitoring
 
+---
+
 ## 👨‍💻 Authors
 
 - **Abdelaziz Ariri**
@@ -119,6 +110,8 @@ Protocol usage
 
 **Supervised by:** Pr. Hanine & Pr. El Akrami
 **Academic Year:** 2024 / 2025
+
+---
 
 ## 📜 License
 
