@@ -6,15 +6,15 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 ---
 
 ## 📑 Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Architecture](#architecture)  
-3. [Technology Stack](#technology-stack)  
-4. [Project Components](#project-components)  
-5. [Getting Started](#getting-started)  
-6. [Results](#results)  
+1. [Project Overview](#-project-overview)
+2. [Architecture](#-architecture)
+3. [Technology Stack](#-technology-stack)
+4. [Project Components](#-project-components)
+5. [Getting Started](#-getting-started)
+6. [Results](#-results)
 7. [Screenshots](#screenshots)
-8. [Authors](#authors)  
-9. [License](#license)
+8. [Author](#-author)
+9. [License](#-license)
 
 ---
 
