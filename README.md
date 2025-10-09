@@ -35,8 +35,7 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 ## 🏗️ Architecture
 
 ![System Architecture](./screenshots/architecture-diagram.png)  
-*Complete pipeline architecture showing data flow from log generation to visualization*
-*[Log Generator] → [Kafka Producer] → [Kafka Topic: logs] → [Spark Streaming + ML Model] → [InfluxDB] → [Grafana Dashboard]*
+*Complete pipeline architecture showing data flow from log generation to visualization : [Log Generator] → [Kafka Producer] → [Kafka Topic: logs] → [Spark Streaming + ML Model] → [InfluxDB] → [Grafana Dashboard]*
 
 ---
 
