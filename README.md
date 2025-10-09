@@ -12,8 +12,9 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 4. [Project Components](#-project-components)  
 5. [Getting Started](#-getting-started)  
 6. [Results](#-results)  
-7. [Authors](#-authors)  
-8. [License](#-license)  
+7. [Screenshots](#screenshots)
+8. [Authors](#-authors)  
+9. [License](#-license)  
 
 ---
 
@@ -33,8 +34,9 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 
 ## 🏗️ Architecture
 
-[Log Generator] → [Kafka Producer] → [Kafka Topic: logs]
-→ [Spark Streaming + ML Model] → [InfluxDB] → [Grafana Dashboard]
+![System Architecture](./screenshots/architecture-diagram.png)  
+*Complete pipeline architecture showing data flow from log generation to visualization*
+*[Log Generator] → [Kafka Producer] → [Kafka Topic: logs] → [Spark Streaming + ML Model] → [InfluxDB] → [Grafana Dashboard]*
 
 ---
 
@@ -52,13 +54,13 @@ Developed as part of the **Distributed Computing & Big Data** course at ENSA El 
 
 ## 📂 Project Components
 
-- `generator.ipynb` → Generates synthetic network logs (`log.csv`)  
-- `kafka_producer.ipynb` → Sends logs to Kafka topic `logs`  
-- `kafka_consumer.ipynb` → Debug consumer to check Kafka messages  
-- `train_threat_classifier.ipynb` → Trains ML models, saves best (`best_model.joblib`)  
-- `spark_streaming.ipynb` → Reads logs from Kafka (debug view)  
-- `spark_processing.ipynb` → Full pipeline: Kafka → Spark → ML → InfluxDB  
-- `docker-compose.yml` → Runs Zookeeper, Kafka, Jupyter, InfluxDB, Grafana  
+- [`notebooks/generator.ipynb`](./notebooks/generator.ipynb) → Generates synthetic network logs (`log.csv`)  
+- [`notebooks/kafka_producer.ipynb`](./notebooks/kafka_producer.ipynb) → Sends logs to Kafka topic `logs`  
+- [`notebooks/kafka_consumer.ipynb`](./notebooks/kafka_consumer.ipynb) → Debug consumer to check Kafka messages  
+- [`notebooks/train_threat_classifier.ipynb`](./notebooks/train_threat_classifier.ipynb) → Trains ML models, saves best (`best_model.joblib`)  
+- [`notebooks/spark_streaming.ipynb`](./notebooks/spark_streaming.ipynb) → Reads logs from Kafka (debug view)  
+- [`notebooks/spark_processing.ipynb`](./notebooks/spark_processing.ipynb) → Full pipeline: Kafka → Spark → ML → InfluxDB  
+- [`docker-compose.yml`](./docker-compose.yml) → Runs Zookeeper, Kafka, Jupyter, InfluxDB, Grafana 
 
 ---
 
@@ -99,6 +101,28 @@ Run `spark_processing.ipynb` → applies ML model & writes to InfluxDB
 - Top malicious IPs
 - Geographic threat map
 - Protocol monitoring
+
+---
+
+## 📸 Screenshots
+
+### 🔹 Grafana Dashboards
+
+**Network Traffic Analysis**  
+![Traffic Dashboard](./screenshots/grafana-traffic.png)  
+*Real-time network traffic volume and protocol monitoring*
+
+**Real-time Threat Detection Dashboard**  
+![Threat Detection Dashboard](./screenshots/grafana-threat-detection.png)  
+*Live monitoring of cybersecurity threats and anomalies*
+
+**Geographic Threat Map**  
+![Geographic Dashboard](./screenshots/grafana-geographic.png)  
+*Geographic visualization of threat origins and distribution*
+
+**Protocol Usage Monitoring**  
+![Protocol Dashboard](./screenshots/grafana-protocols.png)  
+*Analysis of network protocols and associated threats*
 
 ---
 
