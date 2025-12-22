@@ -1,7 +1,6 @@
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.2.1
-    container_name: zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
     healthcheck:
@@ -12,7 +11,6 @@ services:
 
   kafka:
     image: confluentinc/cp-kafka:7.2.1
-    container_name: kafka
     ports:
       - "9092:9092"
     environment:
@@ -28,7 +26,6 @@ services:
 
   jupyter:
     image: jupyter/pyspark-notebook
-    container_name: jupyter
     depends_on:
       - kafka
     ports:
@@ -40,7 +37,6 @@ services:
 
   influxdb:
     image: influxdb:2.7
-    container_name: influxdb
     ports:
       - "8086:8086"
     volumes:
@@ -55,7 +51,6 @@ services:
 
   grafana:
     image: grafana/grafana:latest
-    container_name: grafana
     ports:
       - "3000:3000"
     volumes:
