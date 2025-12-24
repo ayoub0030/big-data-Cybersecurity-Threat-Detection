@@ -51,15 +51,6 @@
 
 ---
 
-<h2 id="components">📂 Project Components</h2>
-<ul>
-  <li><a href="./notebooks/generator.ipynb">notebooks/generator.ipynb</a> → Generates synthetic network logs</li>
-  <li><a href="./notebooks/kafka_producer.ipynb">notebooks/kafka_producer.ipynb</a> → Sends logs to Kafka topic</li>
-  <li><a href="./notebooks/train_threat_classifier.ipynb">notebooks/train_threat_classifier.ipynb</a> → Trains ML models</li>
-  <li><a href="./notebooks/spark_processing.ipynb">notebooks/spark_processing.ipynb</a> → Full processing pipeline</li>
-  <li><a href="./docker-compose.yml">docker-compose.yml</a> → Service orchestration</li>
-</ul>
-
 ---
 
 <h2 id="getting-started">🚀 Getting Started</h2>
@@ -107,7 +98,3 @@
 
 ---
 
-<h2 id="author">👨‍💻 Author</h2>
-<ul>
-  <li><b>Fahd El Attar</b></li>
-</ul>
